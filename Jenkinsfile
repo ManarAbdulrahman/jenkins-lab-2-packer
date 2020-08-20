@@ -19,9 +19,9 @@ spec:
     }
     }
      environment {
-        CREDS = credentials('6c22797b-6e23-4779-984c-c18d46aade6b')
+        CREDS = credentials('manar-aws')
         OWNER = "manar"
-        PROJECT_NAME = 'web-server'
+        PROJECT_NAME = 'k8s-jenkins'
         AWS_ACCESS_KEY_ID= "${CREDS_USR}"
         AWS_SECRET_ACCESS_KEY= "${CREDS_PSW}"
     }
