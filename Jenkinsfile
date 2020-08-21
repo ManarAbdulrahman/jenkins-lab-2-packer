@@ -12,7 +12,6 @@ spec:
   - name: packer
     image: hashicorp/packer 
     command: 
-    - bash
     tty: true
 """
     }
