@@ -30,7 +30,7 @@ spec:
      stage ('build') {
          
             steps {
-                sh "make init"
+                //sh "make init"
                 
                 sh "packer build packer.json "
                 
