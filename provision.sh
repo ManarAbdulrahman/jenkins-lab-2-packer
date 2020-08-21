@@ -2,7 +2,7 @@
 # Install docker
 curl -Ls get.docker.com | sh
 sudo usermod -aG docker ubuntu
-
+sudo apt install make -y
 # Create directory to be served
 sudo mkdir -p /home/ubuntu/api
 sudo chmod a+rwx /home/ubuntu/api
