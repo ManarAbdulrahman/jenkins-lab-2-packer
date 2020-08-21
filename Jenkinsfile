@@ -12,6 +12,7 @@ spec:
   - name: packer
     image: hashicorp/packer 
     command: 
+    - bash
     tty: true
 """
     }
@@ -29,9 +30,10 @@ spec:
          
             steps {
                 //sh "make init"
-                
+              container ("packer") {
+             
                 sh "packer build packer.json "
-                
+              }
             }
         }
     }
