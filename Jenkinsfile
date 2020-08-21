@@ -1,13 +1,12 @@
 pipeline {
-
-    agent {
-            kubernetes {
+  agent {
+    kubernetes {
       yaml """
 apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    some-label: some-label-value
+    stattt: testing
 spec:
   containers:
   - name: packer
@@ -17,7 +16,7 @@ spec:
     tty: true
 """
     }
-    }
+  }
      environment {
         CREDS = credentials('manar-aws')
         OWNER = "manar"
